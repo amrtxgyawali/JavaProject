@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>User Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="container mt-4">
+		<div class="col-md-6 offset-md-3">
+			<div class="card">
+				<div class="card-header d-flex justify-content-between align-items-center">
+					<h3 th:text="${user.getId()>0 ? 'Edit User' : 'Create User'}">Create User</h3>
+					<a href="/user/list" class="btn btn-secondary">Back to List</a>
+				</div>
+				<div class="card-body">
+					<form id="userForm" th:action="@{/user/save}" th:object="${user}" method="post">
+						<input type="hidden" id="userId" th:field="*{id}" />
+
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" th:field="*{name}" required />
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" th:field="*{email}" required />
+						</div>
+
+						<div class="form-group">
+							<label for="phoneNumber">Phone Number:</label>
+							<input type="text" class="form-control" id="phoneNumber" th:field="*{phoneNumber}"
+								title="Phone number must be 10 digits" required />
+						</div>
+
+						<div class="form-group">
+							<label for="address">Address:</label>
+							<textarea class="form-control" id="address" th:field="*{address}" required></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-primary" id="saveBtn"
+							th:text="${user.getId()>0 ? 'Update User' : 'Create User'}">Create User</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

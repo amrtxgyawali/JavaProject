@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <p id="page-hits">Page Hits: Loading...</p>
+</div>
+
+<script th:inline="javascript">
+    function updatePageHits() {
+        // Make an asynchronous call to the API
+        fetch('/api/page-hits')
+            .then(response => response.json())
+            .then(data => {
+                // Update the page with the new page hits count
+                document.getElementById('page-hits').innerText = 'Page Hits: ' + data;
+            })
+            .catch(error => console.error('Error:', error));
+
+        // Schedule the next update after 3 seconds
+        setTimeout(updatePageHits, 3000);
+    }
+
+    // Start the initial update
+    updatePageHits();
+</script>
