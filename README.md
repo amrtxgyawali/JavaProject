@@ -61,7 +61,7 @@ user-management-system/
 │       │   │   
 │       └── resources/
 └── ...
-
+...
 
 ### Technologies Used
 Java: Programming language for the backend.
