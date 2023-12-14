@@ -77,8 +77,8 @@ This project is built as a part of college project requirements and below are th
 
 1. A page with a form where users have to input information  
     ``` /src/main/resources/templates/CreateUser.html ```
-2. must have atleast 3 fields for the user to fill out
-         ``` /src/main/resources/templates/CreateUser.html
+2. must have atleast 3 fields for the user to fill       
+            ``` /src/main/resources/templates/CreateUser.html
    /src/main/java/ca/lambton/project/model/User.java
     /src/main/java/ca/lambton/project/dto/UserDto.java ```
 4. form must be validated on the server side (for every field)
