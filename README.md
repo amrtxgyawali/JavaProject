@@ -24,7 +24,8 @@ Before you start, ensure you have the following installed:
 
 Follow these steps to set up and run the User Management System:
 
-```bash
+...
+
 # Clone the repository
 git clone https://github.com/your-username/user-management-system.git
 cd user-management-system
@@ -35,7 +36,7 @@ mvn clean install
 # Run the application
 java -jar target/user-management-system-1.0.jar
 
-```bash
+
 ### Project Structure
 
 user-management-system/
@@ -61,6 +62,7 @@ user-management-system/
 │       │   │   
 │       └── resources/
 └── ...
+
 ...
 
 ### Technologies Used
