@@ -27,14 +27,14 @@ Follow these steps to set up and run the User Management System:
 ```bash
 
 # Clone the repository
-git clone https://github.com/your-username/user-management-system.git
-cd user-management-system
+git clone https://github.com/amrtxgyawali/JavaProject
+cd JavaProject
 
 # Build the project
 mvn clean install
 
 # Run the application
-java -jar target/user-management-system-1.0.jar
+java -jar target JavaProject-1.0.jar
 ```
 
 ## Project Structure
