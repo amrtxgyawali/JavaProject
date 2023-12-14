@@ -35,6 +35,7 @@ mvn clean install
 # Run the application
 java -jar target/user-management-system-1.0.jar
 
+```bash
 ### Project Structure
 
 user-management-system/
