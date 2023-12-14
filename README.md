@@ -12,7 +12,7 @@ This is small spring MVC application named as User Management Project which simp
 
 ## Getting Started
 
-### Prerequisites
+## Prerequisites
 
 Before you start, ensure you have the following installed:
 
@@ -20,7 +20,7 @@ Before you start, ensure you have the following installed:
 - Maven
 - Your preferred IDE (IntelliJ, Eclipse, etc.)
 
-### Installation
+## Installation
 
 Follow these steps to set up and run the User Management System:
 
@@ -37,7 +37,7 @@ mvn clean install
 java -jar target/user-management-system-1.0.jar
 
 
-### Project Structure
+## Project Structure
 
 user-management-system/
 │
@@ -65,13 +65,13 @@ user-management-system/
 
 ...
 
-### Technologies Used
+## Technologies Used
 Java: Programming language for the backend.
 Spring Boot: Framework for building Java-based enterprise applications.
 Thymeleaf: Template engine for server-side rendering.
 Maven: Build automation tool.
 
-### Requirements covered
+## Requirements covered
 This project is built as a part of college project requirements and below are the files with the requirements
 
 1. A page with a form where users have to input information  
@@ -101,7 +101,7 @@ This project is built as a part of college project requirements and below are th
     -->  /src/main/java/ca/lambton/project/dto/UserDto.java
     -->  /src/main/java/ca/lambton/project/model/User.java
 
-Bonus
+## Bonus
 
 implement 2 spring or java library not covered in class
     --> I used additional libraries like appache commons lang3 library, modelMapper library, spring buildtools library.
@@ -113,7 +113,7 @@ implement 2 spring or java library not covered in class
 
 Also, Bootstrap is used on the html pages in Thymeleaf template to make look and feel of the application good.
 
-### Below are the urls:
+## Below are the urls:
 1. userlist page->  http://localhost:8080/user/list (GET)
 2. create user page->  http://localhostL8080/user   (GET)
 3. Create/Update user ->  http://localhost:8080/user/save (POST)
