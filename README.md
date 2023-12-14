@@ -24,7 +24,7 @@ Before you start, ensure you have the following installed:
 
 Follow these steps to set up and run the User Management System:
 
-...
+```bash
 
 # Clone the repository
 git clone https://github.com/your-username/user-management-system.git
@@ -35,10 +35,11 @@ mvn clean install
 
 # Run the application
 java -jar target/user-management-system-1.0.jar
-
+```
 
 ## Project Structure
 
+```bash
 user-management-system/
 │
 ├── src/
@@ -63,7 +64,7 @@ user-management-system/
 │       └── resources/
 └── ...
 
-...
+```
 
 ## Technologies Used
 Java: Programming language for the backend.
@@ -106,10 +107,10 @@ This project is built as a part of college project requirements and below are th
 implement 2 spring or java library not covered in class
     --> I used additional libraries like appache commons lang3 library, modelMapper library, spring buildtools library.
 
-    Reason of using these libraries
-        - apache.commons.lang3 gives the several utiltiy methods like checking wherether String or objects are empty or null etc
-        - spring buildtools watches the applciation and helps a lot during development. It restarts the application whenever it sees any code changes
-        - modelMapper is very useful in mappring the dto files to model files and vice versa and reduces lots of mapping codes .
+Reason of using these libraries
+    - apache.commons.lang3 gives the several utiltiy methods like checking wherether String or objects are empty or null etc
+    - spring buildtools watches the applciation and helps a lot during development. It restarts the application whenever it sees any code changes
+    - modelMapper is very useful in mappring the dto files to model files and vice versa and reduces lots of mapping codes .
 
 Also, Bootstrap is used on the html pages in Thymeleaf template to make look and feel of the application good.
 
